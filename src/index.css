@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
+
+@layer components {
+    .hero-section {
+        @apply text-gray-600
+    }
+    .hero-container {
+        @apply container mx-auto flex px-5 py-24 md:flex-row flex-col items-center
+    }
+    .hero-wrapper {
+        @apply lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center
+    }
+    .hero-title {
+        @apply sm:text-4xl text-3xl mb-4 font-medium text-gray-900
+    }
+    .hero-br {
+        @apply hidden lg:inline-block
+    }
+    .hero-paragraph {
+        @apply mb-8 leading-relaxed
+    }
+    .hero-btn-primary {
+        @apply inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg
+    }
+    .hero-btn-secondary {
+        @apply ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg
+    }
+    .hero-img-wrapper {
+        @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6
+    }
+    .hero-img {
+        @apply object-cover object-center rounded 
+    }
+}
